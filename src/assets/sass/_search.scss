@@ -1,0 +1,36 @@
+form.search {
+  position: sticky;
+  top: 8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-top: 1.3rem;
+  background-color: $light;
+  
+  .form-inner {
+    position: relative;
+  }
+  
+  #searchJob {
+    width: 100%;
+    padding: 1.2rem 2rem 1.2rem 5rem;
+    border: none;
+    @include fontSetup(1.7rem, 1em, 400);
+    color: $gray;
+    transition: all ease-in-out 250ms;
+    border-bottom: 2px solid $light-gray;
+
+    &:focus {
+      padding-left: 5.5rem;
+      color: $dark;
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 1.54rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}

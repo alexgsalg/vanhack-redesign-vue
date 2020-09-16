@@ -1,0 +1,34 @@
+// Tablet landscape
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+// Tablet portrait
+@media screen and (max-width: 780px) {
+
+    header {
+        .navbar {
+
+            .navbar__link  {
+    
+                &.nav-mobile {
+                    display: block;
+                }
+            }
+        }
+        .actions-box {
+            .action-slack {
+                display: none;
+            }
+        }
+    }
+}
+
+// Smartphones
+@media screen and (max-width: 480px) {
+    
+}

@@ -1,0 +1,45 @@
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.pagefilter {
+    min-width: 250px;
+    max-width: 350px;
+    width: 30vw;
+    height: 100%;
+    padding: 2rem 2rem 2rem 0;
+    
+}
+
+
+.pagecontent {
+    width: calc(100% - 30rem);
+    height: 100%;
+    padding: 0 2rem 2rem 4rem;
+    border-left: 1px solid $light-gray;
+    
+    .inner-content {
+        height: 100%;
+    }
+}
+
+.search-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 0 1.2rem;
+
+    .recommended-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.6rem;
+    }
+}

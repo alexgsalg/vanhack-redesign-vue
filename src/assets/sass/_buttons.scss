@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  padding: 1.3rem 3rem;
+  @include fontSetup(1.7rem,1em,500);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  background-color: $primary;
+  color: $light;
+  transition: all ease-in-out 250ms;
+  
+  &:hover {
+    background-color: $secondary;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+}

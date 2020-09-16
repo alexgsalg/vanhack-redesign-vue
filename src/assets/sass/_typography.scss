@@ -1,0 +1,35 @@
+@mixin fontSetup ($size, $height, $weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.4em;
+}
+
+.big {
+    font-size: 1.85rem;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.medium {
+    font-size: 1.7rem;
+    line-height: 1.4em;
+}
+
+.small {
+    font-size: 1.17rem;
+    line-height: 1.4em;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.c-primary {
+    color: $primary;
+}

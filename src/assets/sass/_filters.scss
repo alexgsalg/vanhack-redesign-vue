@@ -1,0 +1,96 @@
+.filter {
+    padding-bottom: 2rem;
+    color: $gray;
+    
+}
+
+.filter-block {
+    margin-bottom: 4rem;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $light-gray;
+    
+    @include fontSetup(1.35rem, 1.5rem, 800);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.filter-body {
+    padding-left: 2rem;
+    @include fontSetup(1.7rem, 1.5rem, 400);
+    
+    .filter-group {
+        position: relative;
+        margin-bottom: 1.8rem;
+        
+        .filter-arrow {
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            width: 1.3rem;
+            height: 1.5rem;
+            pointer-events: none;
+
+            .rect__left {
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                width: 0.25rem;
+                height: 1.5rem;
+                background: #C4C4C4;
+                border-radius: 50px;
+                transform: rotate(-45deg) translate(50%);
+                transition: all ease-in-out 150ms;
+            }
+            .rect__right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0.25rem;
+                height: 1.5rem;
+                background: #C4C4C4;
+                border-radius: 50px;
+                transform: rotate(45deg) translate(50%);
+                transition: all ease-in-out 150ms;
+            }
+        } 
+        
+        &.open {
+            .rect__left {
+                top: 0.25rem;
+                transform: rotateZ(-90deg) translate(50%);
+                background: $secondary;
+            }
+            .rect__right {
+                transform: rotateZ(90deg) translate(51%);
+                background: $secondary;
+            }
+            .inner-filter{
+                display: block;
+            }
+        } 
+        .inner-filter{
+            display: none;
+        }
+    }
+    
+    
+
+    .inner-filter {
+        @include fontSetup(1.5rem, 1.5rem, 400);
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.filter__item {
+    margin-bottom: 1.5rem;
+}
+
+
