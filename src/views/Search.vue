@@ -25,6 +25,19 @@
         </div>
       </div>
 
+      <!-- Job grid -->
+      <div class="jobs">
+        <!-- Card Premium -->
+        <Premium />
+
+        <!-- Job Card -->
+        <Job />
+        <Job />
+        <Job />
+        <Job />
+        <Job />
+      </div>
+
     </div>
   </div>
 </main>
@@ -33,11 +46,15 @@
 <script>
 // @ is an alias to /src
 import PageFilter from '@/components/PageFilter'
+import Premium from '@/components/VanhackPremium'
+import Job from '@/components/Cards'
 
 export default {
   name: 'Search',
   components: {
-    PageFilter
+    PageFilter,
+    Premium,
+    Job
   },
   data: function () {
     return {
