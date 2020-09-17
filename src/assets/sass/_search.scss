@@ -1,9 +1,8 @@
 form.search {
-  position: sticky;
-  top: 7rem;
+  position: relative;
   width: 100%;
   margin-bottom: 1rem;
-  padding-top: 1.3rem;
+  padding: 1.3rem 3rem 0 3rem;
   background-color: $light;
   
   .form-inner {

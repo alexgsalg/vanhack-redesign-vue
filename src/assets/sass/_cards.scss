@@ -1,0 +1,112 @@
+.card {
+  position: relative;
+  width: calc((100% - 4.5rem) / 2);
+  padding: 2.8rem;
+  border: 1px solid rgba($medium-gray, 0.22);
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px 1px rgba(182,182,182,0.12);
+
+  .card__title {
+    @extend .big;
+    width: 98%;
+    color: $primary;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $gray;
+    margin-bottom: 1rem;
+    
+    span {
+      color: $primary;
+      font-weight: bold;
+      font-size: 2rem;
+      padding-left: 0.3rem;
+    }
+  }
+
+  .card__jobtype {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+    @include fontSetup(1.6rem,1.9rem,400);
+    
+    img {
+      width: 2.2rem;
+      height: 1.9rem;
+      object-fit: contain;
+      margin-right: 0.6rem;
+    }
+  }
+  
+  .card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    .skills {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      padding-right: 1.5rem;
+      list-style: none;
+
+      .skill__item {
+        @include fontSetup(1.15rem, 1.2em, 400);
+        display: inline-block;
+        padding: 0.6rem 0.8rem;
+        border: 1px solid $orange;
+        border-radius: 50px;
+        color: $orange;
+        
+        &.required {
+          border: 1px solid $green;
+          color: $green;
+        }
+      }
+    }
+
+  }
+
+  .card__star {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}
+
+.premium {
+  @extend .card;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  overflow: hidden;
+
+  .premium__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 2.8rem;
+  }
+
+  .premium__video {
+    width: 50%;
+
+    iframe {
+      min-height: 230px !important;
+      height: 100% !important;
+    } 
+  }
+}

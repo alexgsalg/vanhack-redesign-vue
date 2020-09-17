@@ -3,17 +3,17 @@
   <PageFilter />
 
   <div class="pagecontent">
-    <div class="inner-content">
-      <!-- Search form -->
-      <form action="" class="search">
-        <div class="form-inner">
-          <input type="text" name="search" id="searchJob" placeholder="Search for job title, skill or remote job" v-model="searchInput">
+    <!-- Search form -->
+    <form action="" class="search">
+      <div class="form-inner">
+        <input type="text" name="search" id="searchJob" placeholder="Search for job title, skill or remote job" v-model="searchInput">
 
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.3554 2.28823C10.3044 -0.762744 5.33871 -0.762744 2.28774 2.28823C-0.762579 5.33987 -0.762579 10.3049 2.28774 13.3565C5.00471 16.0729 9.23627 16.3639 12.2853 14.2428C12.3494 14.5464 12.4962 14.8361 12.7324 15.0722L17.1756 19.5154C17.823 20.1615 18.8694 20.1615 19.5136 19.5154C20.1604 18.8685 20.1604 17.8222 19.5136 17.1774L15.0704 12.7329C14.8356 12.4987 14.5452 12.3512 14.2416 12.2871C16.364 9.23742 16.073 5.00653 13.3554 2.28823ZM11.9526 11.9537C9.67477 14.2316 5.96769 14.2316 3.69054 11.9537C1.41404 9.67592 1.41404 5.96951 3.69054 3.69169C5.96769 1.41454 9.67477 1.41454 11.9526 3.69169C14.2304 5.96951 14.2304 9.67592 11.9526 11.9537Z" fill="#888888" />
-          </svg>
-        </div>
-      </form>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.3554 2.28823C10.3044 -0.762744 5.33871 -0.762744 2.28774 2.28823C-0.762579 5.33987 -0.762579 10.3049 2.28774 13.3565C5.00471 16.0729 9.23627 16.3639 12.2853 14.2428C12.3494 14.5464 12.4962 14.8361 12.7324 15.0722L17.1756 19.5154C17.823 20.1615 18.8694 20.1615 19.5136 19.5154C20.1604 18.8685 20.1604 17.8222 19.5136 17.1774L15.0704 12.7329C14.8356 12.4987 14.5452 12.3512 14.2416 12.2871C16.364 9.23742 16.073 5.00653 13.3554 2.28823ZM11.9526 11.9537C9.67477 14.2316 5.96769 14.2316 3.69054 11.9537C1.41404 9.67592 1.41404 5.96951 3.69054 3.69169C5.96769 1.41454 9.67477 1.41454 11.9526 3.69169C14.2304 5.96951 14.2304 9.67592 11.9526 11.9537Z" fill="#888888" />
+        </svg>
+      </div>
+    </form>
+    <div class="inner-content">
       <div class="search-info">
         <p class="bold">10 of 86 Jobs with these skills</p>
         <div class="recommended-box">
@@ -31,11 +31,9 @@
         <Premium />
 
         <!-- Job Card -->
-        <Job />
-        <Job />
-        <Job />
-        <Job />
-        <Job />
+        <Job :localJob="true" :favorite="false" />
+        <Job :localJob="false" :favorite="true" />
+        <Job :localJob="true" :favorite="false" />
       </div>
 
     </div>
@@ -59,8 +57,8 @@ export default {
   data: function () {
     return {
       searchInput: '',
-      recommended: false
+      recommended: false,
     }
-  }
+  },
 }
 </script>
