@@ -1,5 +1,5 @@
 {
-  "id" : [
+  "structure" : [
     {
       "id": "0",
       "title": "Frontend developer",
@@ -16,8 +16,8 @@
         "mustHave": "- 4+ years in React.js\n- Solid experience in JavaScript\n- Strong understanding of what makes a great UX/UI\n",
         "niceHave": "-Experience with Vue.js\n- Some experience in css pre-processor like SASS\n- Basic notion of Python\n"
       },
-      "mainSkills" : ["React.js", "JavaScript"],
-      "otherSkills" : ["Vue.js", "SASS", "Python"],
+      "mainSkills" : [{"name":"React.js"}, {"name":"JavaScript"}],
+      "otherSkills" : [{"name":"Vue.js"}, {"name":"SASS"}, {"name":"Python"}],
       "applyed" : "false"
     },
     {
@@ -36,8 +36,8 @@
         "mustHave": "- 4+ years in React.js\n- Solid experience in JavaScript\n- Strong understanding of what makes a great UX/UI\n",
         "niceHave": "-Experience with Vue.js\n- Some experience in css pre-processor like SASS\n- Basic notion of Python\n"
       },
-      "mainSkills" : ["PHP", "API Rest"],
-      "otherSkills" : ["Vue.js", "Laravel", "Python"],
+      "mainSkills" : [{"name":"PHP"}, {"name":"API Rest"}],
+      "otherSkills" : [{"name":"Vue.js"}, {"name":"Laravel"}, {"name":"Python"}],
       "applyed" : "false"
     },
     {
@@ -56,8 +56,8 @@
         "mustHave": "- 4+ years in React.js\n- Solid experience in JavaScript\n- Strong understanding of what makes a great UX/UI\n",
         "niceHave": "-Experience with Vue.js\n- Some experience in css pre-processor like SASS\n- Basic notion of Python\n"
       },
-      "mainSkills" : ["JavaScript", "React.js", "Graphql", "React Native"],
-      "otherSkills" : ["Node.js", "Storybook"],
+      "mainSkills" : [{"name":"JavaScript"}, {"name":"React.js"}, {"name":"Graphql"}, {"name":"React Native"}],
+      "otherSkills" : [{"name":"Node.js"}, {"name":"Storybook"}],
       "applyed" : "false"
     },
     {
@@ -76,8 +76,8 @@
         "mustHave": "7+ years of experience on Software Development;\n 3+ years of experience developing professionally in Java;\n Strong experience with AEM 6.1+, must have architected and launched sites with it before;\n Experience with 3rd party integrations;\n",
         "niceHave": "Candidates with verified English classified as \"Advanced\" or \"Fluent\" will be considered;\n"
       },
-      "mainSkills" : ["Java", "Sling", "Osgi", "Apache"],
-      "otherSkills" : ["DNS", "Aws"],
+      "mainSkills" : [{"name":"Java"}, {"name":"Sling"}, {"name":"Osgi"}, {"name":"Apache"}],
+      "otherSkills" : [{"name":"DNS"}, {"name":"Aws"}],
       "applyed" : "false"
     }
   ]
