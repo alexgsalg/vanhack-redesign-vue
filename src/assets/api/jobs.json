@@ -1,0 +1,84 @@
+{
+  "id" : [
+    {
+      "id": "0",
+      "title": "Frontend developer",
+      "salary": "(CAD) 80k to 100k",
+      "favorite": "false",
+      "location": {
+        "city": "Toronto",
+        "country": "Canada",
+        "isRemote": "false"
+      },
+      "description": {
+        "mainDesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam molestiae et architecto maxime, pariatur a doloremque repellendus itaque! Reprehenderit quia aperiam recusandae corrupti doloribus quas porro ullam at soluta odit!",
+        "importantDetails": "Quisquam molestiae et architecto maxime, pariatur a doloremque repellendus &nbsp;itaque! Reprehenderit quia aperiam recusandae corrupti doloribus quas porro ullam at soluta odit!",
+        "mustHave": "- 4+ years in React.js\n- Solid experience in JavaScript\n- Strong understanding of what makes a great UX/UI\n",
+        "niceHave": "-Experience with Vue.js\n- Some experience in css pre-processor like SASS\n- Basic notion of Python\n"
+      },
+      "mainSkills" : ["React.js", "JavaScript"],
+      "otherSkills" : ["Vue.js", "SASS", "Python"],
+      "applyed" : "false"
+    },
+    {
+      "id": "1",
+      "title": "Backend developer",
+      "salary": "(CAD) 80k to 100k",
+      "favorite": "false",
+      "location": {
+        "city": "Vancouver",
+        "country": "Canada",
+        "isRemote": "true"
+      },
+      "description": {
+        "mainDesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam molestiae et architecto maxime, pariatur a doloremque repellendus itaque! Reprehenderit quia aperiam recusandae corrupti doloribus quas porro ullam at soluta odit!",
+        "importantDetails": "Quisquam molestiae et architecto maxime, pariatur a doloremque repellendus &nbsp;itaque! Reprehenderit quia aperiam recusandae corrupti doloribus quas porro ullam at soluta odit!",
+        "mustHave": "- 4+ years in React.js\n- Solid experience in JavaScript\n- Strong understanding of what makes a great UX/UI\n",
+        "niceHave": "-Experience with Vue.js\n- Some experience in css pre-processor like SASS\n- Basic notion of Python\n"
+      },
+      "mainSkills" : ["PHP", "API Rest"],
+      "otherSkills" : ["Vue.js", "Laravel", "Python"],
+      "applyed" : "false"
+    },
+    {
+      "id": "2",
+      "title": "Front-end Developer (ReactJS/React Native)",
+      "salary": "(CAD) 80k to 100k",
+      "favorite": "false",
+      "location": {
+        "city": "Vancouver",
+        "country": "Canada",
+        "isRemote": "false"
+      },
+      "description": {
+        "mainDesc": "",
+        "importantDetails": "Quisquam molestiae et architecto maxime, pariatur a doloremque repellendus &nbsp;itaque! Reprehenderit quia aperiam recusandae corrupti doloribus quas porro ullam at soluta odit!",
+        "mustHave": "- 4+ years in React.js\n- Solid experience in JavaScript\n- Strong understanding of what makes a great UX/UI\n",
+        "niceHave": "-Experience with Vue.js\n- Some experience in css pre-processor like SASS\n- Basic notion of Python\n"
+      },
+      "mainSkills" : ["JavaScript", "React.js", "Graphql", "React Native"],
+      "otherSkills" : ["Node.js", "Storybook"],
+      "applyed" : "false"
+    },
+    {
+      "id": "2",
+      "title": "AEM Architect",
+      "salary": "",
+      "favorite": "false",
+      "location": {
+        "city": "Vancouver",
+        "country": "Canada",
+        "isRemote": "false"
+      },
+      "description": {
+        "mainDesc": "An innovative and award winning services company in Canada is looking for an AEM Architect to join their team.&nbsp; Among other things, this person will be dealing with mission critical systems, architecting and leading the development on them, participating (and even leading) meetings with clients, translating requirements into tasks and so on.",
+        "importantDetails": "Quisquam molestiae et architecto maxime, pariatur a doloremque repellendus &nbsp;itaque! Reprehenderit quia aperiam recusandae corrupti doloribus quas porro ullam at soluta odit!",
+        "mustHave": "7+ years of experience on Software Development;\n 3+ years of experience developing professionally in Java;\n Strong experience with AEM 6.1+, must have architected and launched sites with it before;\n Experience with 3rd party integrations;\n",
+        "niceHave": "Candidates with verified English classified as \"Advanced\" or \"Fluent\" will be considered;\n"
+      },
+      "mainSkills" : ["Java", "Sling", "Osgi", "Apache"],
+      "otherSkills" : ["DNS", "Aws"],
+      "applyed" : "false"
+    }
+  ]
+}

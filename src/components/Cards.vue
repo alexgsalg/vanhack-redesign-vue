@@ -17,8 +17,8 @@
     </ul>
     <button class="button">Apply</button>
   </div>
-  <img class="card__star" src="../assets/img/icon-star-active.svg" v-if="favorite" @click="!favorite">
-  <img class="card__star" src="../assets/img/icon-star.svg" v-else>
+  <img class="card__star" :src="require(`@/assets/img/${isFavorite}.svg`)" @click="favorite = !favorite">
+  <!-- <img class="card__star" :src="`@/assets/img/${favorite}.svg`"> -->
 </div>
 </template>
 
@@ -29,20 +29,16 @@ export default {
       type: Boolean,
       default: true
     },
-    favorite: {
-      type: Boolean,
-      default: true
-    }
   },
   data() {
     return {
-      // localJob: true,
-      // favorite: false
+      favorite: false
     }
   },
+
   computed: {
     isFavorite() {
-      return this.favorite === false ? '@/assets/img/icon-star.svg' : '@/assets/img/icon-star-active.svg'
+      return this.favorite === false ? 'icon-star' : 'icon-star-active'
     }
   },
 }

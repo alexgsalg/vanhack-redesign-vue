@@ -31,9 +31,11 @@
         <Premium />
 
         <!-- Job Card -->
-        <Job :localJob="true" :favorite="false" />
-        <Job :localJob="false" :favorite="true" />
-        <Job :localJob="true" :favorite="false" />
+        <Job :localJob="true" />
+        <Job :localJob="false" />
+        <Job :localJob="true" />
+        <Job :localJob="false" />
+
       </div>
 
     </div>
@@ -46,6 +48,7 @@
 import PageFilter from '@/components/PageFilter'
 import Premium from '@/components/VanhackPremium'
 import Job from '@/components/Cards'
+import jobJSON from '../assets/api/jobs.json'
 
 export default {
   name: 'Search',
@@ -54,11 +57,17 @@ export default {
     Premium,
     Job
   },
-  data: function () {
+  data() {
     return {
       searchInput: '',
       recommended: false,
+      jobList: jobJSON
     }
+  },
+  mounted() {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
   },
 }
 </script>
